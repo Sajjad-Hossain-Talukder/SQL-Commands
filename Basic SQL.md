@@ -58,7 +58,7 @@
   
 | Command    | Description |
 | ----------- | ----------- |  
-|SELECT column1, column2, ... FROM table_name <b>WHERE</b> condition;| Used to filter records. It is used to extract only those records that fulfill a specified condition. It is also used in <b>UPDATE, DELETE</b>, etc.! |
+|SELECT column1, column2, ... FROM table_name <b>WHERE</b> condition ; | Used to filter records. It is used to extract only those records that fulfill a specified condition. It is also used in <b> UPDATE , DELETE</b> , etc.! |
   
   <br>
   
