@@ -54,6 +54,12 @@
   
 
 #### Section 05: [ Operator ] : Table
-  ##### Sub_01 : [ Arithmatic Operator ] : Table
+  ##### [ Arithmatic Operator ]
   | Command    | Description |
 | ----------- | ----------- |
+  |+| Addition |
+  |-|Subtraction|
+  |*|Multiplication|
+  |/|Division|
+  |%|Modulo|
+  
