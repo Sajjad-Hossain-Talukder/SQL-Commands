@@ -39,8 +39,7 @@
 | ----------- | ----------- |
 |SELECT column1, column2, ...<br> FROM table_name ;| Used to select data from a database.The data returned is stored in a result table, called the result-set.|
 |SELECT * FROM table_name |To see all the fields available in the table|
-|SELECT <b>DISTINCT</b> column1, column2, ...
-FROM table_name; | Used to return only distinct (different) values. <br> <b>NOTE : Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.</b>|
+|SELECT <b>DISTINCT</b> column1, column2, ... FROM table_name; | Used to return only distinct (different) values. <br> <b>NOTE : Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.</b>|
   
   
 
