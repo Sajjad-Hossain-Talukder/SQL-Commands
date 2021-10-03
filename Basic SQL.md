@@ -10,7 +10,7 @@
 |DROP DATABASE db_name ; | To delete the whole database | 
 |BACKUP DATABASE; |Ask Sir !!!!! | 
 
-<br><br>
+<br>
 
 #### Section 02 : [ SHOW | RENAME | DROP ] : Table
 
@@ -20,7 +20,12 @@
 |RENAME TABLE old_table_name TO new_table_name; | To rename the existing Table. |
 |DROP TABLE table_name; | To drop the table. | 
   
-  
+<br>
   
 
 #### Section 03 : [ INSERT INTO ] : Table
+  
+| Command    | Description |
+| ----------- | ----------- |  
+|INSERT INTO table_name <br>VALUES (value1,value2,value3,......) ; | TO add values for all the columns of the table, do not need to specify the column names in the SQL query. However, make sure the order of the values is in the same order as the columns in the table.|
+|INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1,value2,value3,......) ; |TO insert Data Only in Specified Columns.|
