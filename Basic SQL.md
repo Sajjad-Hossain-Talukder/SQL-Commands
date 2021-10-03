@@ -64,7 +64,7 @@
   
 
 #### Section 07: [ Operator ] : Table
-  <br>
+  
   ##### [ Arithmatic Operator ]
   
   | Command    | Description |
