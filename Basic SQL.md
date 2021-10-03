@@ -37,3 +37,4 @@
 
 | Command    | Description |
 | ----------- | ----------- |
+|SELECT column1, column2, ...<br> FROM table_name ;|
