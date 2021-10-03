@@ -10,7 +10,7 @@
 |DROP DATABASE db_name ; | To delete the whole database | 
 |BACKUP DATABASE; |Ask Sir !!!!! | 
 
-
+<br><br>
 
 #### Section 02 : [ SHOW | RENAME | DROP ] : Table
 
