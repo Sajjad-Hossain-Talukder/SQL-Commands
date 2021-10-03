@@ -50,10 +50,19 @@
 | Command    | Description |
 | ----------- | ----------- |
 |SELECT column1, column2, ...FROM table_name <b> ORDER BY</b> column1, column2,... ASC/DESC; | Used to sort the result-set in ascending or descending order. It sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword. <br> <b> NOTE : ORDER BY Several Columns : In case of Ordering By several Columns , It sorts based on First column, if it founds duplicate of then it follows second column and so on ... </b>|
+
 <br>
   
 
-#### Section 05: [ Operator ] : Table
+#### Section 06: [ ORDER BY ] : Table
+  
+| Command    | Description |
+| ----------- | ----------- |  
+  
+  <br>
+  
+
+#### Section 07: [ Operator ] : Table
   ##### [ Arithmatic Operator ]
   | Command    | Description |
 | ----------- | ----------- |
