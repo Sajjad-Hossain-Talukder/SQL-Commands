@@ -32,7 +32,7 @@
   <br>
   
 
-#### Section 01 : [ SHOW | CREATE | DROP ] : Database
+#### Section 04 : [ SELECT ] : Table
 
 
 | Command    | Description |
