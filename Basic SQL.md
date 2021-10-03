@@ -38,5 +38,5 @@
 | Command    | Description |
 | ----------- | ----------- |
 |SELECT column1, column2, ...<br> FROM table_name ;| Used to select data from a database.The data returned is stored in a result table, called the result-set.|
-
+|SELECT * FROM table_name |To see all the fields available in the table|
 
