@@ -98,7 +98,7 @@
   |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b>BETWEEN</b> value1 AND value2;|	Between a certain range of value1 and value2  |
   |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b> NOT BETWEEN</b> value1 AND value2;| All of the value out of the range value1 and value2 |
   | SELECT column1, column2, ...<br>FROM table_name<br> WHERE columnN <b>LIKE</b> pattern;|a% =	Strings start with a <br> %a = Strings end with a<br> %or% =	Strings that have or in any position<br> _r%	= strings that have "r" in the 2nd position from Beginning <br> a_%	= Strings start with a and It at least have 1 char after a . <br> a__% = Strings start with a and It at least have 2 char after a . <br>'a%o' =	Strings that start with "a" and ends with "o" <br><br> If a pattern has <b> "n" number of Underscore</b> at the beginning, It will not count n number of character from beginging in the String.<br><br>If a pattern has <b> "n" number of Underscore</b> at the end, string must have at least n number of charcter after the pattern in String | 
-  |Logical Operator Used in SunQuery : All-ANY_EXISTS_SOME| We will Study them In the later part of the File|
+  |Logical Operator Used in SubQuery : All-ANY-EXISTS-SOME| We will Study them In the later part of the File|
   
  
   
