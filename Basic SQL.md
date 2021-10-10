@@ -63,7 +63,7 @@
   <br>
   
 
-#### Section 07: [ Operator ] : Table
+#### Section 07: [ Operators ] : Table
   
   ##### [ Arithmatic Operator ]
   
@@ -85,9 +85,8 @@
   | >= | Greater than or equal	|
   |<= |	Less than or equal	
   |<>|	Not equal.<br><b> Note: In some versions of SQL this operator may be written as !=	</b>|
-  |BETWEEN|	Between a certain range |	
-  |LIKE|	Search for a pattern |	
-  |IN|	To specify multiple possible values for a column|
+  |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b>BETWEEN<b> value1 AND value2;|	Between a certain range |	
 
+  
   
   
