@@ -85,7 +85,7 @@
   | >= | Greater than or equal	|
   |<= |	Less than or equal	
   |<>|	Not equal.<br><b> Note: In some versions of SQL this operator may be written as !=	</b>|
-  |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b>BETWEEN<b> value1 AND value2;|	Between a certain range |	
+  |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b>BETWEEN</b> value1 AND value2;|	Between a certain range |	
 
   
   
