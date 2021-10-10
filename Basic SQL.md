@@ -96,8 +96,8 @@
   |SELECT column1, column2, ...<br>FROM table_name<br>WHERE <b>NOT</b> condition;| The NOT operator displays a record if the condition(s) is NOT TRUE.|
   |SELECT column_name(s) <br>FROM table_name <br> WHERE column_name <b>IN</b> (value1, value2, ...);|The IN operator allows you to specify multiple values in a WHERE clause.The IN operator is a <b> shorthand for multiple OR conditions.</b>|
   |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b>BETWEEN</b> value1 AND value2;|	Between a certain range of value1 and value2  |
-  |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b> NOT BETWEEN</b> value1 AND value2;|	 |	
+  |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b> NOT BETWEEN</b> value1 AND value2;| All of the value out of the range value1 and value2 |
 
   
- 
+ |
   
