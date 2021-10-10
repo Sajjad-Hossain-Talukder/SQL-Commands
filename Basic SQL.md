@@ -76,7 +76,7 @@
   |%|Modulo|
   
  
-  ##### [ Relational Operator ]
+  ##### [ Comparison Operator ]
   | Command    | Description |
   | ----------- | ----------- |
   | = | Equal |
