@@ -97,7 +97,7 @@
   |SELECT column_name(s) <br>FROM table_name <br> WHERE column_name <b>IN</b> (value1, value2, ...);|The IN operator allows you to specify multiple values in a WHERE clause.The IN operator is a <b> shorthand for multiple OR conditions.</b>|
   |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b>BETWEEN</b> value1 AND value2;|	Between a certain range of value1 and value2  |
   |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b> NOT BETWEEN</b> value1 AND value2;| All of the value out of the range value1 and value2 |
-  | SELECT column1, column2, ...<br>FROM table_name<br> WHERE columnN <b>LIKE</b> pattern; |WHERE table_Name LIKE 'a%'	Finds any values that start with "a"<br>WHERE table_Name LIKE '%a'	Finds any values that end with "a"<br>WHERE table_Name LIKE '%or%'	Finds any values that have "or" in any position<br>WHERE table_Name LIKE '_r%'	Finds any values that have "r" in the second position<br>WHERE table_Name LIKE 'a_%'	Finds any values that start with "a" and are at least 2 characters in length<br>WHERE table_Name LIKE 'a__%'	Finds any values that start with "a" and are at least 3 characters in length<br>WHERE table_Name LIKE 'a%o'	Finds any values that start with "a" and ends with "o"|
+  | SELECT column1, column2, ...<br>FROM table_name<br> WHERE columnN <b>LIKE</b> pattern; ||'a%' =	Strings start with "a"<br>'%a' = Strings end with "a"<br> '%or%' =	Strings that have "or" in any position<br>'_r%'	= strings that have "r" in the2nd position from Beginning <br> 'a_%'	= Strings which have 2nd last Char 'a' <br> 'a__%' = Strings which 2nd last Char is 'a'<br>'a%o' =	Strings that start with "a" and ends with "o"|
   
  
   
