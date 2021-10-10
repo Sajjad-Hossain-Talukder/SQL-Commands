@@ -91,6 +91,10 @@
   ##### [ Logical Operator ]
   | Command    | Description |
   | ----------- | ----------- |
+  |SELECT column1, column2, ...<br>FROM table_name<br>WHERE condition1 <b>AND</b> condition2 <b>AND</b> condition3 ...;| The AND operator displays a record if <b>All</b> the conditions separated by AND are TRUE.|
+  |SELECT column1, column2, ...<br>FROM table_name<br>WHERE condition1 <b>OR</b> condition2 <b>OR</b> condition3 ...;| The AND operator displays a record if <b>ANY</b> of the conditions separated by AND are TRUE.|
+  
+  
   |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b>BETWEEN</b> value1 AND value2;|	Between a certain range |	
 
   
