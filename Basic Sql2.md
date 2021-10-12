@@ -5,7 +5,8 @@
   
 | Command    | Description |
 | ----------- | ----------- |
-|UPDATE table_name<br>SET column1 = value1, column2 = value2, ...<br>WHERE condition;|Used to modify the existing records in a table.|
+|<b>UPDATE</b> table_name<br>SET column1 = value1, column2 = value2, ...<br>WHERE condition;|Used to modify the existing records in a table.|
+|<b>DELETE</b> FROM table_name <br>WHERE condition;|Used to delete existing records in a table.|
 
 <br> 
 <br>
