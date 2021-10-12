@@ -1,4 +1,16 @@
-#### Section 08: [ AS ] : Table-Column
+
+
+
+#### Section 8 : [ UPDATE ] : Table-Column
+  
+| Command    | Description |
+| ----------- | ----------- |
+|UPDATE table_name<br>SET column1 = value1, column2 = value2, ...<br>WHERE condition;|Used to modify the existing records in a table.|
+
+<br> 
+<br>
+
+#### Section 09 : [ AS ] : Table-Column
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -9,10 +21,9 @@
 
 
 <br> 
-
 <br>
 
-#### Section 09: [ Constrains ] : Table-Column
+#### Section 10 : [ Constraints ] : Table-Column
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -23,3 +34,5 @@
 |<b>CHECK</b> | The CHECK constraint is used to limit the value range that can be placed in a column.<br>If you define a CHECK constraint on a column it will allow only certain values for this column.<br>If you define a CHECK constraint on a table it can limit the values in certain columns based on values in other columns in the row.<br>https://www.w3schools.com/sql/sql_check.asp |
 |<b>DEFAULT</b> <br>1] <br> CREATE TABLE Persons (<br>    City varchar(255) <b>DEFAULT 'Sandnes'</b><br>);<br><br>  2] <br>ALTER TABLE Persons <br>ALTER City<b> SET DEFAULT 'Sandnes'</b>;<br> <br> 3]<br> ALTER TABLE Persons <br> ALTER City <b> DROP DEFAULT;</b> <br>|Sets a default value for a column if no value is specified <br> 1] SQL DEFAULT on CREATE TABLE <br>2] SQL DEFAULT on ALTER TABLE  <br> 3] DROP a DEFAULT Constraint <br> |
 |CREATE INDEX | Used to create and retrieve data from the database very quickly|
+
+
