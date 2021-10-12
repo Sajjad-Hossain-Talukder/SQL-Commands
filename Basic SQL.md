@@ -29,7 +29,7 @@
 | ----------- | ----------- |  
 |INSERT INTO table_name VALUES (value1,value2,value3,......) , (value1,value2,value3,......) , (value1,value2,value3,......), ..... ; | TO add values for all the columns of the table, do not need to specify the column names in the SQL query. However, make sure the order of the values is in the same order as the columns in the table.|
 |INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1,value2,value3,......) , (value1,value2,value3,......) , (value1,value2,value3,......), ..... ; |TO insert Data Only in Specified Columns.|
-  <br>
+  <br>"
   
 
 #### Section 04 : [ SELECT ] : Table
@@ -97,7 +97,7 @@
   |SELECT column_name(s) <br>FROM table_name <br> WHERE column_name <b>IN</b> (value1, value2, ...);|The IN operator allows you to specify multiple values in a WHERE clause.The IN operator is a <b> shorthand for multiple OR conditions.</b>|
   |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b>BETWEEN</b> value1 AND value2;|	Between a certain range of value1 and value2  |
   |SELECT column_name(s) <br>FROM table_name <br>WHERE column_name <br> <b> NOT BETWEEN</b> value1 AND value2;| All of the value out of the range value1 and value2 |
-  | SELECT column1, column2, ...<br>FROM table_name<br> WHERE columnN <b>LIKE</b> pattern;|a% =	Strings start with a <br> %a = Strings end with a<br> %or% =	Strings that have or in any position<br> _r%	= strings that have "r" in the 2nd position from Beginning <br> a_%	= Strings start with a and It at least have 1 char after a . <br> a__% = Strings start with a and It at least have 2 char after a . <br>'a%o' =	Strings that start with "a" and ends with "o" <br><br> If a pattern has <b> "n" number of Underscore</b> at the beginning, It will not count n number of character from beginging in the String.<br><br>If a pattern has <b> "n" number of Underscore</b> at the end, string must have at least n number of charcter after the pattern in String | 
+  | SELECT column1, column2, ...<br>FROM table_name<br> WHERE columnN <b>LIKE</b> pattern;|" a% " =	Strings start with a <br> " %a " = Strings end with a<br>" %or% "=	Strings that have or in any position<br> " _ r % "	= strings that have "r" in the 2nd position from Beginning <br> "a _ %"	= Strings start with a and It at least have 1 char after a . <br> "a _ _ %" = Strings start with a and It at least have 2 char after a . <br>"a%o" =	Strings that start with "a" and ends with "o" <br><br> If a pattern has <b> "n" number of Underscore</b> at the beginning, It will not count n number of character from beginging in the String.<br><br>If a pattern has <b> "n" number of Underscore</b> at the end, string must have at least n number of charcter after the pattern in String | 
   |Logical Operator Used in SubQuery : All-ANY-EXISTS-SOME| We will Study them In the later part of the File|
   
  
