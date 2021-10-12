@@ -5,8 +5,8 @@
   
 | Command    | Description |
 | ----------- | ----------- |
-|<b>UPDATE</b> table_name<br>SET column1 = value1, column2 = value2, ...<br>WHERE condition;|Used to modify the existing records in a table.|
-|<b>DELETE</b> FROM table_name <br>WHERE condition;|Used to delete existing records in a table.|
+|**UPDATE** table_name <br> SET column1 = value1, column2 = value2, ...<br>WHERE condition;|Used to modify the existing records in a table.|
+|<b>DELETE</b> FROM table_name <br>WHERE condition;|Used to delete existing Rows in a table.|
 
 <br> 
 <br>
@@ -15,16 +15,38 @@
   
 | Command    | Description |
 | ----------- | ----------- |
-| AS  | Used to <b> rename a column or table </b> with an  <b> alias (উপনাম) </b> . <br> An alias only exists for the duration of the query.|
+| **AS**  | Used to <b> rename a column or table </b> with an  <b> alias (উপনাম) </b> . <br> An alias only exists for the duration of the query.|
 | SELECT <b> CustomerName AS Customer</b>,<b> ContactName AS 'Contact Person'</b> <br> FROM Customers;| Renaming Column with single word or Multiple Words|
 |SELECT o.OrderID, o.OrderDate, c.CustomerName<br>FROM <b>Customers AS c, Orders AS o</b><br>WHERE ....... ;|Renaming Table|
 |SELECT S_Id as 'Student ID' , S_Name as 'Student Name' , <br> <b> CONCAT_WS(' ',S_Address,S_Email,S_Mobile) as 'Contact Details' </b> <br> from student  ;| Combining Column   |
+<br> 
+<br>
+
+
+
+#### Section 10 : [ Functions ] : Table-Column
+  
+| Command    | Description |
+| ----------- | ----------- |
+|**UPPER()** <br> SELECT UPPER (column_name ) as New_name <br> From table_name <br><br> SELECT UPPER('string');|Convert the character case. New_name must Be assigned using AS , else It shows Heading with Upper Keyword . |
+|**lOWER()** SELECT LOWER (column_name ) as New_name <br> From table_name <br><br> SELECT LOWER('string');|Convert the character case.|
+|**CONCAT()** <br> <br>SELECT CONCAT(column_name1, " ",column_name2, " ",column_name," ",....) AS new_name <br>FROM table_name; <br><br>SELECT CONCAT (exp1," ",exp2," ",....) <br> |Adds two or more expressions/columns together.|
+|**CONCAT_WS()** <br> SELECT CONCAT_WS(" ",column_name1,column_name2,column_name,....) AS new_name <br>FROM table_name; <br><br>SELECT CONCAT_WS (" ",exp1,exp2,....) <br> |Do as **CONCAT()** . Only difference , you don't have to put individual space after each string.Put separator at the beginning.  |
+|**POW()**<br> SELECT POW(value1,value2) | Return value1 is Powered By value2 |
+|**GREATEST()** <br> GREATEST(arg1, arg2, arg3, ...)| Returns the greatest one from arg list.|
+|**LEAST()** <br> LEAST(arg1, arg2, arg3, ...)| Returns the smallest one from arg list.|
+|**LOG()** <br> Selcet LOG(value) ; <br>Selcet LOG2(value) ; <br>Selcet LOG10(value) ; <br> | LOG(value) - Returns natural Logarithms <br> LOG2(value) - Returns 2-based Logarithms <br> LOG10(value) - Returns Common Logarithm |
+|RAND()||
+|**More Mathematical Functions : **<br> **TRUNCATE** - TRUNCATE(number, decimals) <br>**ROUND** - ROUND(number, decimals) <br>**FLOOR** - FLOOR(value)  <br> **CEIL** - CEIL(value)  <br>**ABS** - ABS(value) <br>**SQRT** - SQRT(value) <br> **EXP** - EXP(value) <br>**PI** - PI() <br> **DEGREES** - DEGREES(radians_value) <br> **RADIANS** - RADIANS(degrees_value)| **Truncate()** truncates a number to the specified number of decimal places.<br>Example : TRUNCATE(2.343454,4); = 2.3434 <br><br> **ROUND()** DO same as TRUNCATE().Only Difference is, one can omit decimal value in this Function and in this case it returns decimal portion of Given number <br> Use ROUND rather TRUNCATE <br><br>**Floor()** function returns the largest integer value that is smaller than or equal to a number.<br><br> **CEIL()** function returns the smallest integer value that is bigger than or equal to a number. <br><br>**ABS()** returns Absolute value of given value.<br><br>**SQRT()** function returns the square root of a number.<br><br> **EXP()** - Return e raised to the power of given number. <br><br> **PI()** - Return the value of PI <br><br> **DEGREES()** function converts a value in radians to degrees. <br><br>**RADIANS()** function converts a degree value into radians.|
+|**Trigonometric Functions : **<br> SELECT **SIN(value)**; <br> SELECT **ASIN(value)**; <br> SELECT **COS(value)**; <br> SELECT **ACOS(value)**; <br> SELECT **TAN(value)**; <br> SELECT **ATAN(value)**; <br> |**SIN(value)**- Returns Sine of given number<br> **ASIN(value)**- Returns ARC Sine of given number<br>**COS(value)**- Returns CoSine of given number<br>**ACOS(value)**- Returns ARC COSine of given number<br>**TAN(value)**- Returns Tangent of given number<br>**ATAN(value)**- Returns ARC Tangent of given number<br>|
 
 
 <br> 
 <br>
 
-#### Section 10 : [ Constraints ] : Table-Column
+
+
+#### Section 11 : [ Constraints ] : Table-Column
   
 | Command    | Description |
 | ----------- | ----------- |
