@@ -1,11 +1,12 @@
 
 
-#### Section 08 : [ UPDATE - DELETE ] : Row 
+#### Section 08 : [ UPDATE - DELETE - TRUNCATE TABLE ] : Row 
   
 | Command    | Description |
 | ----------- | ----------- |
 |**UPDATE** table_name <br> SET column1 = value1, column2 = value2, ...<br>WHERE condition;|Used to modify the existing records in a table.|
-|<b>DELETE</b> FROM table_name <br>WHERE condition;|Used to delete existing Rows in a table.|
+|**DELETE** FROM table_name <br>WHERE condition;|Used to delete existing Rows in a table when condition meets.|
+|**TRUNCATE TABLE** table_name;| Deletes the data inside a table, but not the table itself.|
 
 <br> 
 <br>
@@ -60,6 +61,7 @@
 
 <br> 
 <br>
+
 #### Section 13 : [ Functions ] : Table-Column-Row
   
 | Command    | Description |
