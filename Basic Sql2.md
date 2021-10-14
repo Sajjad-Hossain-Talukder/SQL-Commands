@@ -1,7 +1,7 @@
 
 
 
-#### Section 8 : [ UPDATE ] : Table-Column
+#### Section 08 : [ UPDATE ] : ROW 
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -10,8 +10,16 @@
 
 <br> 
 <br>
+#### Section 09 : [ UPDATE ] : ROW 
+  
+| Command    | Description |
+| ----------- | ----------- |
+|**UPDATE** table_name <br> SET column1 = value1, column2 = value2, ...<br>WHERE condition;|Used to modify the existing records in a table.|
+|<b>DELETE</b> FROM table_name <br>WHERE condition;|Used to delete existing Rows in a table.|
 
-#### Section 09 : [ AS ] : Table-Column
+<br> 
+<br>
+#### Section 10 : [ AS ] : Table-Column
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -24,7 +32,7 @@
 
 
 
-#### Section 10 : [ Functions ] : Table-Column
+#### Section 11 : [ Functions ] : Table-Column
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -44,7 +52,7 @@
 
 
 
-#### Section 11 : [ Aggregate Functions - Group Functions ] : Table-Column
+#### Section 12 : [ Aggregate Functions - Group Functions ] : Table-Column
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -60,7 +68,7 @@
 
 
 
-#### Section 12 : [ Constraints ] : Table-Column
+#### Section 13 : [ Constraints ] : Table-Column
   
 | Command    | Description |
 | ----------- | ----------- |
