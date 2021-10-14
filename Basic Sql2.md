@@ -1,7 +1,7 @@
 
 
 
-#### Section 08 : [ UPDATE ] : ROW 
+#### Section 08 : [ UPDATE - DELETE ] : Row 
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -10,16 +10,22 @@
 
 <br> 
 <br>
-#### Section 09 : [ UPDATE ] : ROW 
+
+#### Section 09 : [ ALTER TABLE ] : column
   
 | Command    | Description |
 | ----------- | ----------- |
-|**UPDATE** table_name <br> SET column1 = value1, column2 = value2, ...<br>WHERE condition;|Used to modify the existing records in a table.|
-|<b>DELETE</b> FROM table_name <br>WHERE condition;|Used to delete existing Rows in a table.|
+|**ALTER TABLE** | Used to **add, delete, or modify columns** and  **add and drop various constraint**.|
+|ALTER TABLE table_name <br>ADD column_name datatype;| Add new column in Table.|
+|ALTER TABLE table_name<br>DROP COLUMN column_name;| Delete exsisting column.  |
+|ALTER TABLE table_name<br>MODIFY COLUMN column_name new_datatype;|Change the data type of a column in a table.<br>**NOTE :** Be careful About previous datatype and values.|
+|ALTER TABLE table_name<br>CHANGE old_column_name new_column_name new_datatype;|Change old column name and datatype. <br> **NOTE :** Again be careful about previous datatype and values .It may truncate previous data in case of smaller size of datatype. |
 
 <br> 
 <br>
-#### Section 10 : [ AS ] : Table-Column
+
+
+#### Section 10 : [ AS ] : column
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -31,8 +37,7 @@
 <br>
 
 
-
-#### Section 11 : [ Functions ] : Table-Column
+#### Section 11 : [ Functions ] : Table-Column-Row
   
 | Command    | Description |
 | ----------- | ----------- |
