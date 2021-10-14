@@ -1,6 +1,5 @@
 
 
-
 #### Section 08 : [ UPDATE - DELETE ] : Row 
   
 | Command    | Description |
@@ -37,8 +36,31 @@
 <br> 
 <br>
 
+#### Section 11: [ Aggregate Functions - Group Functions ] : Table-Column
+  
+| Command    | Description |
+| ----------- | ----------- |
+|<b>Aggregate Functions :</b> | They also known as **Group Functions**.Because they operate on sets of rows and generate a result. |
+|**AVG()** <br> SELECT AVG(column_name) AS 'Average Value' From table_name ; |Return the average value for the given column.|
+|**COUNT()** <br>SELECT COUNT(column_name) AS 'COUNTER'from table_name ;| Returns the number of records returned by a select query.<br>**Note:** NULL values are not counted.|
+|**MIN()** <br>SELECT MIN(column_name) AS 'Minimum' from table_name ;| Returns the minimum data from the records.|
+|**MAX()** <br>SELECT MAX(column_name) AS 'Maximum' from table_name ;| Returns the maximum data from the records.|
+|**SUM()** <br>SELECT SUM(column_name) AS 'Sum' from table_name |returns the total sum of a numeric column|
 
-#### Section 11 : [ Functions ] : Table-Column-Row
+<br> 
+<br>
+
+#### Section 12: [ GROUP BY ] : Table-Column
+
+| Command    | Description |
+| ----------- | ----------- |
+|**GROUP BY**|<br>Make group of rows that have the same values into summary rows, like **"find the number of customers in each country"**.It is often used with aggregate functions **(COUNT(), MAX(), MIN(), SUM(), AVG())** to group the result-set by one or more columns.<br>|
+|**SELECT** column_name(s) , aggrergate function  <br>**FROM** table_name <br> **WHERE** condition <br> **GROUP BY** column_name(s) <br> **ORDER BY** column_name(s); |EXAMPLE : TABLE- demo<br>SELECT country , sum(age) AS AGE_SUM <br> from  customer_informationlistforsale <br>GROUP BY (country) <br>ORDER BY AGE_SUM ;|
+
+
+<br> 
+<br>
+#### Section 13 : [ Functions ] : Table-Column-Row
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -58,23 +80,7 @@
 
 
 
-#### Section 12 : [ Aggregate Functions - Group Functions ] : Table-Column
-  
-| Command    | Description |
-| ----------- | ----------- |
-|<b>Aggregate Functions :</b> | They also known as **Group Functions**.Because they operate on sets of rows and generate a result. |
-|**AVG()** <br> SELECT AVG(column_name) AS 'Average Value' From table_name ; |Return the average value for the given column.|
-|**COUNT()** <br>SELECT COUNT(column_name) AS 'COUNTER'from table_name ;| Returns the number of records returned by a select query.<br>**Note:** NULL values are not counted.|
-|**MIN()** <br>SELECT MIN(column_name) AS 'Minimum' from table_name ;| Returns the minimum data from the records.|
-|**MAX()** <br>SELECT MAX(column_name) AS 'Maximum' from table_name ;| Returns the maximum data from the records.|
-|**SUM()** <br>SELECT SUM(column_name) AS 'Sum' from table_name |returns the total sum of a numeric column|
-
-<br> 
-<br>
-
-
-
-#### Section 13 : [ Constraints ] : Table-Column
+#### Section 14 : [ Constraints ] : Table-Column
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -85,5 +91,3 @@
 |<b>CHECK</b> | The CHECK constraint is used to limit the value range that can be placed in a column.<br>If you define a CHECK constraint on a column it will allow only certain values for this column.<br>If you define a CHECK constraint on a table it can limit the values in certain columns based on values in other columns in the row.<br>https://www.w3schools.com/sql/sql_check.asp |
 |<b>DEFAULT</b> <br>1] <br> CREATE TABLE Persons (<br>    City varchar(255) <b>DEFAULT 'Sandnes'</b><br>);<br><br>  2] <br>ALTER TABLE Persons <br>ALTER City<b> SET DEFAULT 'Sandnes'</b>;<br> <br> 3]<br> ALTER TABLE Persons <br> ALTER City <b> DROP DEFAULT;</b> <br>|Sets a default value for a column if no value is specified <br> 1] SQL DEFAULT on CREATE TABLE <br>2] SQL DEFAULT on ALTER TABLE  <br> 3] DROP a DEFAULT Constraint <br> |
 |CREATE INDEX | Used to create and retrieve data from the database very quickly|
-
-
