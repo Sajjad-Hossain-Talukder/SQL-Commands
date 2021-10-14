@@ -15,9 +15,10 @@ Given Command Shows all column from those table . To get specific colum use ```t
 
 **Syntex :** 
 
+![image](https://user-images.githubusercontent.com/63524824/137393954-090f9a78-0e22-45ca-9769-8e07007147f0.png)
+
+
 ```
 SELECT * FROM tablename_1 JOIN tablename_2 JOIN ..... ON condition/s.
 ```
 
-
-![image](https://user-images.githubusercontent.com/63524824/137391901-9d01c6dd-f224-4ef3-951d-55e99eb814b7.png)
