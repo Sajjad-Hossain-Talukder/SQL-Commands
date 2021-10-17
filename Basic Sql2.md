@@ -75,10 +75,11 @@ ON table1.column_name = table2.column_name;
 <img src="images/full.png">
 
 **Syntex :**
-```
-<b>SELECT</b> col_name(s) FROM table1 RIGHT JOIN table2  ON table1.col_name = table2.col_name;
 
-```
+| SELECT col_name(s) FROM table1 RIGHT JOIN table2  ON table1.col_name = table2.col_name;|
+|--|
+
+
 
 
 
