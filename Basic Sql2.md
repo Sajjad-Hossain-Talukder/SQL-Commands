@@ -23,6 +23,7 @@ SELECT * FROM tablename_1 JOIN tablename_2 JOIN ..... ON condition/s.
 
 Here we are using two table given below to understand join in MySQL . 
 <br>
+
 #### INNER JOIN or JOIN : 
 
 <img src="images/inner.gif">
@@ -38,6 +39,7 @@ ON table1.column_name = table2.column_name;
 
 ```
 <br>
+
 #### LEFT OUTER JOIN : 
 
 <img src="images/left.gif">
@@ -53,6 +55,7 @@ ON table1.column_name = table2.column_name;
 
 ```
 <br>
+
 #### RIGHT OUTER JOIN : 
 
 <img src="images/right.gif">
@@ -68,6 +71,7 @@ ON table1.column_name = table2.column_name;
 
 ```
 <br>
+
 #### FULL OUTER JOIN : 
 
 <img src="images/full.gif">
@@ -92,7 +96,6 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 |  **INNER JOIN**<br> SELECT column_name(s)<br>FROM table1<br>INNER JOIN table2<br>ON table1.column_name = table2.column_name;|Returns records that have matching values in both tables |
 | **LEFT (OUTER) JOIN** <br> SELECT column_name(s)<br>FROM table1<br>LEFT JOIN table2<br>ON table1.column_name = table2.column_name;|Returns all records from the left table, and the matched records from the right table|
 | **RIGHT (OUTER) JOIN** <br>SELECT column_name(s)<br>FROM table1<br>RIGHT JOIN table2<br>ON table1.column_name = table2.column_name;| Returns all records from the right table, and the matched records from the left table|
-| **FULL (OUTER) JOIN** <br> SELECT column_name(s) FROM table1 <br> LEFT JOIN table2  ON table1.column_name = table2.column_name;<br>UNION<br>SELECT column_name(s) FROM table1<br> RIGHT JOIN table2  ON table1.column_name = table2.column_name;
-|FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table|
+| **FULL (OUTER) JOIN** <br> SELECT column_name(s) FROM table1 <br> LEFT JOIN table2  ON table1.column_name = table2.column_name;<br>UNION<br>SELECT column_name(s) FROM table1<br> RIGHT JOIN table2  ON table1.column_name = table2.column_name;|FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table|
 
 
