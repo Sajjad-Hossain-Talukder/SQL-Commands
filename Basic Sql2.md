@@ -91,7 +91,8 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 | ----------- | ----------- |
 |  **INNER JOIN**<br> SELECT column_name(s)<br>FROM table1<br>INNER JOIN table2<br>ON table1.column_name = table2.column_name;|Returns records that have matching values in both tables |
 | **LEFT (OUTER) JOIN** <br> SELECT column_name(s)<br>FROM table1<br>LEFT JOIN table2<br>ON table1.column_name = table2.column_name;|Returns all records from the left table, and the matched records from the right table|
+| **RIGHT (OUTER) JOIN** <br>SELECT column_name(s)<br>FROM table1<br>RIGHT JOIN table2<br>ON table1.column_name = table2.column_name;| Returns all records from the right table, and the matched records from the left table|
+| **FULL (OUTER) JOIN** <br> SELECT column_name(s) FROM table1 <br> LEFT JOIN table2  ON table1.column_name = table2.column_name;<br>UNION<br>SELECT column_name(s) FROM table1<br> RIGHT JOIN table2  ON table1.column_name = table2.column_name;
+|FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table|
 
 
-| **RIGHT (OUTER) JOIN** |<img src="images/right.gif">  <br>Returns all records from the left table, and the matched records from the right table|
-| **FULL (OUTER) JOIN** |<img src="images/full.gif">  <br>FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table|
