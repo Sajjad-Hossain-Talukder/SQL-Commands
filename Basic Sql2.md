@@ -19,10 +19,12 @@ Given Command Shows all column from those table . To get specific colum use ```t
 SELECT * FROM tablename_1 JOIN tablename_2 JOIN ..... ON condition/s.
 ```
 
-
+**Classification of Join :** 
   
+<img src="images/Join-Inner-Outer.jpg"> 
+
+
 | Command    | Description |
 | ----------- | ----------- |
-| HELLO | Sajjad |
-
-<img src="images/Join-Inner-Outer.jpg"> 
+|  **INNER JOIN** <table><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td>Sajjad</td><td>Hossain</td></tr></tbody></table>| Returns records that have matching values in both tables |
+| **OUTER JOIN** |Returns records that have matching values in both tables|
