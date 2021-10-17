@@ -25,6 +25,17 @@ Here we are using two table given below to understand join in MySQL .
 
 ##### Inner Join or Join : 
 
+<img src="images/inner.gif">
+
+<img src="images/inner.png">
+
+```
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+
+```
 
 
 
@@ -32,7 +43,7 @@ Here we are using two table given below to understand join in MySQL .
 
 | Command    | Description |
 | ----------- | ----------- |
-|  **INNER JOIN** | <img src="images/inner.gif">  <br> Returns records that have matching values in both tables |
+|  **INNER JOIN** |   <br> Returns records that have matching values in both tables |
 | **RIGHT (OUTER) JOIN** |<img src="images/right.gif">  <br>Returns all records from the left table, and the matched records from the right table|
 | **LEFT (OUTER) JOIN** |<img src="images/left.gif">  <br>RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table|
 | **FULL (OUTER) JOIN** |<img src="images/full.gif">  <br>FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table|
