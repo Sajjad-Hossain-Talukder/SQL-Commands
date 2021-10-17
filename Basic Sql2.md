@@ -22,7 +22,7 @@ SELECT * FROM tablename_1 JOIN tablename_2 JOIN ..... ON condition/s.
 **Classification of Join :** 
 
 Here we are using two table given below to understand join in MySQL . 
-
+<br>
 #### INNER JOIN or JOIN : 
 
 <img src="images/inner.gif">
@@ -37,8 +37,8 @@ INNER JOIN table2
 ON table1.column_name = table2.column_name;
 
 ```
-
-#### OUTER LEFT JOIN : 
+<br>
+#### LEFT OUTER JOIN : 
 
 <img src="images/left.gif">
 
@@ -52,8 +52,8 @@ LEFT JOIN table2
 ON table1.column_name = table2.column_name;
 
 ```
-
-#### OUTER RIGHT JOIN : 
+<br>
+#### RIGHT OUTER JOIN : 
 
 <img src="images/right.gif">
 
@@ -65,6 +65,18 @@ SELECT column_name(s)
 FROM table1
 RIGHT JOIN table2
 ON table1.column_name = table2.column_name;
+
+```
+<br>
+#### FULL OUTER JOIN : 
+
+<img src="images/full.gif">
+
+<img src="images/full.png">
+
+**Syntex :**
+```
+<b>SELECT</b> col_name(s) FROM table1 RIGHT JOIN table2  ON table1.col_name = table2.col_name;
 
 ```
 
