@@ -2,7 +2,7 @@
 <br>
 <br>
 
-#### Section 08 : [ JOIN - CARTESIAN PRODUCT ] : Row 
+### Section 08 : [ JOIN - CARTESIAN PRODUCT ] : Row 
 
 
 In different cases , we need to join two or more tables.To join two or more tables , we apply Cartesian Product formula here.But Cartesian Product returns all possible result .So also need to apply condition basis of Primary Key/Others Key of those table.
@@ -23,7 +23,7 @@ SELECT * FROM tablename_1 JOIN tablename_2 JOIN ..... ON condition/s.
 
 Here we are using two table given below to understand join in MySQL . 
 
-##### INNER JOIN or JOIN : 
+#### INNER JOIN or JOIN : 
 
 <img src="images/inner.gif">
 
@@ -38,7 +38,7 @@ ON table1.column_name = table2.column_name;
 
 ```
 
-##### OUTER LEFT JOIN : 
+#### OUTER LEFT JOIN : 
 
 <img src="images/left.gif">
 
@@ -53,13 +53,30 @@ ON table1.column_name = table2.column_name;
 
 ```
 
+#### OUTER RIGHT JOIN : 
+
+<img src="images/right.gif">
+
+<img src="images/right.png">
+
+**Syntex :**
+```
+SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name = table2.column_name;
+
+```
+
 
 
 
 
 | Command    | Description |
 | ----------- | ----------- |
-|  **INNER JOIN** |   <br> Returns records that have matching values in both tables |
+|  **INNER JOIN**<br> SELECT column_name(s)<br>FROM table1<br>INNER JOIN table2<br>ON table1.column_name = table2.column_name;|Returns records that have matching values in both tables |
+| **LEFT (OUTER) JOIN** <br> SELECT column_name(s)<br>FROM table1<br>LEFT JOIN table2<br>ON table1.column_name = table2.column_name;|Returns all records from the left table, and the matched records from the right table|
+
+
 | **RIGHT (OUTER) JOIN** |<img src="images/right.gif">  <br>Returns all records from the left table, and the matched records from the right table|
-| **LEFT (OUTER) JOIN** |<img src="images/left.gif">  <br>RIGHT (OUTER) JOIN: Returns all records from the right table, and the matched records from the left table|
 | **FULL (OUTER) JOIN** |<img src="images/full.gif">  <br>FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table|
