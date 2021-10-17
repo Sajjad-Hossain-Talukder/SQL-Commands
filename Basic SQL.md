@@ -212,3 +212,5 @@
 | Command    | Description |
 | ----------- | ----------- |
 | HELLO | Sajjad |
+
+<img src="images/Join-Inner-Outer.jpg"> 
