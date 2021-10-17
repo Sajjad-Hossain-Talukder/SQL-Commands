@@ -23,16 +23,32 @@ SELECT * FROM tablename_1 JOIN tablename_2 JOIN ..... ON condition/s.
 
 Here we are using two table given below to understand join in MySQL . 
 
-##### Inner Join or Join : 
+##### INNER JOIN or JOIN : 
 
 <img src="images/inner.gif">
 
 <img src="images/inner.png">
 
+**Syntex :**
 ```
 SELECT column_name(s)
 FROM table1
 INNER JOIN table2
+ON table1.column_name = table2.column_name;
+
+```
+
+##### OUTER LEFT JOIN : 
+
+<img src="images/left.gif">
+
+<img src="images/left.png">
+
+**Syntex :**
+```
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
 ON table1.column_name = table2.column_name;
 
 ```
