@@ -26,5 +26,5 @@ SELECT * FROM tablename_1 JOIN tablename_2 JOIN ..... ON condition/s.
 
 | Command    | Description |
 | ----------- | ----------- |
-|  **INNER JOIN** <table><thead><tr><th>Command</th><th>Description</th></tr></thead><tbody><tr><td>Sajjad</td><td>Hossain</td></tr></tbody></table>| Returns records that have matching values in both tables |
+|  **INNER JOIN** | <img src="images/inner.gif">  <br> Returns records that have matching values in both tables |
 | **OUTER JOIN** |Returns records that have matching values in both tables|
