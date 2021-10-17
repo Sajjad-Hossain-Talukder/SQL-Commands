@@ -1,6 +1,6 @@
 ## MySQL Basics
 
-#### Section 01 : [ SHOW | CREATE | DROP ] : Database
+### Section 01 : [ SHOW | CREATE | DROP ] : Database
 
 
 | Command    | Description |
@@ -12,7 +12,7 @@
 
 <br>
 
-#### Section 02 : [ SHOW | RENAME | DROP ] : Table
+### Section 02 : [ SHOW | RENAME | DROP ] : Table
 
 | Command    | Description |
 | ----------- | ----------- |
@@ -23,7 +23,7 @@
 <br>
   
 
-#### Section 03 : [ INSERT INTO ] : Table
+### Section 03 : [ INSERT INTO ] : Table
   
 | Command    | Description |
 | ----------- | ----------- |  
@@ -32,7 +32,7 @@
   <br>"
   
 
-#### Section 04 : [ SELECT ] : Table
+### Section 04 : [ SELECT ] : Table
 
 
 | Command    | Description |
@@ -45,7 +45,7 @@
  <br>
   
 
-#### Section 05: [ ORDER BY ] : Table
+### Section 05: [ ORDER BY ] : Table
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -54,7 +54,7 @@
 <br>
   
 
-#### Section 06: [ WHERE ] : Table
+### Section 06: [ WHERE ] : Table
   
 | Command    | Description |
 | ----------- | ----------- |  
@@ -63,9 +63,9 @@
   <br>
   
 
-#### Section 07: [ Operators ] : Table
+### Section 07: [ Operators ] : Table
   
-  ##### [ Arithmatic Operator ]
+  #### [ Arithmatic Operator ]
   
   | Command    | Description |
   | ----------- | ----------- |
@@ -76,7 +76,7 @@
   |%|Modulo|
   
  
-  ##### [ Comparison Operator ]
+  #### [ Comparison Operator ]
   | Command    | Description |
   | ----------- | ----------- |
   | = | Equal |
@@ -88,7 +88,7 @@
   
   
   
-  ##### [ Logical Operator ]
+  #### [ Logical Operator ]
   | Command    | Description |
   | ----------- | ----------- |
   |SELECT column1, column2, ...<br>FROM table_name<br>WHERE condition1 <b>AND</b> condition2 <b>AND</b> condition3 ...;| The AND operator displays a record if <b>All</b> the conditions separated by AND are TRUE.|
@@ -106,9 +106,117 @@
   
   
   <br>
+  <br>
+
+  
+<br>
+<br>
+
+### Section 08 : [ JOIN - CARTESIAN PRODUCT ] : Row 
+
+
+In different cases , we need to join two or more tables.To join two or more tables , we apply Cartesian Product formula here.But Cartesian Product returns all possible result .So also need to apply condition basis of Primary Key/Others Key of those table.
+
+**Syntex :** 
+```
+SELECT * FROM tablename_1 , tablename_2 , ..... where condition/s.
+```
+Given Command Shows all column from those table . To get specific colum use ```tablename_1.column_name``` instead of * . We can re-write the command using **JOIN-ON** keyword.
+
+**Syntex :** 
+
+```
+SELECT * FROM tablename_1 JOIN tablename_2 JOIN ..... ON condition/s.
+```
+
+**Classification of Join :** 
+
+Here we are using two table given below to understand join in MySQL . 
+<br>
+
+#### INNER JOIN or JOIN : 
+
+<img src="images/inner.gif">
+
+<img src="images/inner.png">
+
+**Syntex :**
+```
+SELECT column_name(s)
+FROM table1
+INNER JOIN table2
+ON table1.column_name = table2.column_name;
+
+```
+<br>
+
+#### LEFT OUTER JOIN : 
+
+<img src="images/left.gif">
+
+<img src="images/left.png">
+
+**Syntex :**
+```
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
+
+```
+<br>
+
+#### RIGHT OUTER JOIN : 
+
+<img src="images/right.gif">
+
+<img src="images/right.png">
+
+**Syntex :**
+```
+SELECT column_name(s)
+FROM table1
+RIGHT JOIN table2
+ON table1.column_name = table2.column_name;
+
+```
+<br>
+
+#### FULL OUTER JOIN : 
+
+<img src="images/full.gif">
+
+<img src="images/full.png">
+
+**Syntex :**
+```
+SELECT column_name(s) FROM table1 LEFT JOIN table2  ON table1.column_name = table2.column_name;
+UNION
+SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = table2.column_name;
+
+```
+
+<br>
+<br>
+
+
+
+
+| Command    | Description |
+| ----------- | ----------- |
+|  **INNER JOIN**<br> SELECT column_name(s)<br>FROM table1<br>INNER JOIN table2<br>ON table1.column_name = table2.column_name;|Returns records that have matching values in both tables |
+| **LEFT (OUTER) JOIN** <br> SELECT column_name(s)<br>FROM table1<br>LEFT JOIN table2<br>ON table1.column_name = table2.column_name;|Returns all records from the left table, and the matched records from the right table|
+| **RIGHT (OUTER) JOIN** <br>SELECT column_name(s)<br>FROM table1<br>RIGHT JOIN table2<br>ON table1.column_name = table2.column_name;| Returns all records from the right table, and the matched records from the left table|
+| **FULL (OUTER) JOIN** <br> SELECT column_name(s) FROM table1 <br> LEFT JOIN table2  ON table1.column_name = table2.column_name;<br>UNION<br>SELECT column_name(s) FROM table1<br> RIGHT JOIN table2  ON table1.column_name = table2.column_name;|FULL (OUTER) JOIN: Returns all records when there is a match in either left or right table|
+
+
+<br><br>
+
+
+
   
 
-#### Section 08 : [ UPDATE - DELETE - TRUNCATE TABLE ] : Row 
+### Section 09 : [ UPDATE - DELETE - TRUNCATE TABLE ] : Row 
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -119,7 +227,7 @@
 <br> 
 <br>
 
-#### Section 09 : [ ALTER TABLE ] : column
+### Section 10 : [ ALTER TABLE ] : column
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -134,7 +242,7 @@
 <br>
 
 
-#### Section 10 : [ AS ] : column
+### Section 11 : [ AS ] : column
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -145,7 +253,7 @@
 <br> 
 <br>
 
-#### Section 11: [ Aggregate Functions - Group Functions ] : Table-Column
+### Section 12: [ Aggregate Functions - Group Functions ] : Table-Column
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -159,7 +267,7 @@
 <br> 
 <br>
 
-#### Section 12: [ GROUP BY ] : Table-Column
+### Section 13: [ GROUP BY ] : Table-Column
 
 | Command    | Description |
 | ----------- | ----------- |
@@ -170,7 +278,7 @@
 <br> 
 <br>
 
-#### Section - : [ Functions ] : Table-Column-Row
+### Section 14 : [ Functions ] : Table-Column-Row
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -190,7 +298,7 @@
 
 
 
-#### Section 14 : [ Constraints ] : Table-Column
+### Section 15 : [ Constraints ] : Table-Column
   
 | Command    | Description |
 | ----------- | ----------- |
