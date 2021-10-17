@@ -202,15 +202,4 @@
 |<b>DEFAULT</b> <br>1] <br> CREATE TABLE Persons (<br>    City varchar(255) <b>DEFAULT 'Sandnes'</b><br>);<br><br>  2] <br>ALTER TABLE Persons <br>ALTER City<b> SET DEFAULT 'Sandnes'</b>;<br> <br> 3]<br> ALTER TABLE Persons <br> ALTER City <b> DROP DEFAULT;</b> <br>|Sets a default value for a column if no value is specified <br> 1] SQL DEFAULT on CREATE TABLE <br>2] SQL DEFAULT on ALTER TABLE  <br> 3] DROP a DEFAULT Constraint <br> |
 |CREATE INDEX | Used to create and retrieve data from the database very quickly|
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 021ac79d0e010e99d89f365d4093cb75b4303ebe
-
-
-  
-| Command    | Description |
-| ----------- | ----------- |
-| HELLO | Sajjad |
-
-<img src="images/Join-Inner-Outer.jpg"> 
