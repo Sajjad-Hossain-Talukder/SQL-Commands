@@ -20,8 +20,14 @@ SELECT * FROM tablename_1 JOIN tablename_2 JOIN ..... ON condition/s.
 ```
 
 **Classification of Join :** 
-  
-<img src="images/Join-Inner-Outer.jpg"> 
+
+Here we are using two table given below to understand join in MySQL . 
+
+##### Inner Join or Join : 
+
+
+
+
 
 
 | Command    | Description |
