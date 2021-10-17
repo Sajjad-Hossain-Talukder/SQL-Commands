@@ -75,10 +75,12 @@ ON table1.column_name = table2.column_name;
 <img src="images/full.png">
 
 **Syntex :**
+```
+SELECT column_name(s) FROM table1 LEFT JOIN table2  ON table1.column_name = table2.column_name;
+UNION
+SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = table2.column_name;
 
-| SELECT col_name(s) FROM table1 RIGHT JOIN table2  ON table1.col_name = table2.col_name;|
-|--|
-
+```
 
 
 
