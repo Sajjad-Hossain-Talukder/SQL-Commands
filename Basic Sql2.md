@@ -19,6 +19,10 @@ Given Command Shows all column from those table . To get specific colum use ```t
 SELECT * FROM tablename_1 JOIN tablename_2 JOIN ..... ON condition/s.
 ```
 
-![image](https://user-images.githubusercontent.com/63524824/137452852-5c3897e3-ee61-458d-a645-8a21fcba913a.png)
 
+  
+| Command    | Description |
+| ----------- | ----------- |
+| HELLO | Sajjad |
 
+<img src="images/Join-Inner-Outer.jpg"> 
