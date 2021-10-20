@@ -30,6 +30,22 @@
 |INSERT INTO table_name VALUES (value1,value2,value3,......) , (value1,value2,value3,......) , (value1,value2,value3,......), ..... ; | TO add values for all the columns of the table, do not need to specify the column names in the SQL query. However, make sure the order of the values is in the same order as the columns in the table.|
 |INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1,value2,value3,......) , (value1,value2,value3,......) , (value1,value2,value3,......), ..... ; |TO insert Data Only in Specified Columns.|
   <br>
+
+  <br> 
+
+  ### Section 10 : [ ALTER TABLE ] : column
+  
+| Command    | Description |
+| ----------- | ----------- |
+|**ALTER TABLE** | Used to **add, delete, or modify columns** and  **add and drop various constraint**.|
+|**ALTER TABLE** table_name <br>**ADD** column_name datatype;| Add new column in Table.|
+|**ALTER TABLE** table_name<br>**DROP COLUMN** column_name;| Delete exsisting column.  |
+|**ALTER TABLE** table_name<br>**DROP COLUMNS** column_name1 , column_name2 , ... ;| Delete exsisting columns.  |
+|**ALTER TABLE** table_name<br>**MODIFY COLUMN** column_name new_datatype;|Change the data type of a column in a table.<br>**NOTE :** Be careful About previous datatype and values.|
+|**ALTER TABLE** table_name<br>**CHANGE** old_column_name new_column_name new_datatype;|Change old column name and datatype. <br> **NOTE :** Again be careful about previous datatype and values .It may truncate previous data in case of smaller size of datatype. |
+
+<br> 
+<br>
   
 
 ### Section 04 : [ SELECT ] : Table
@@ -227,19 +243,7 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 <br> 
 <br>
 
-### Section 10 : [ ALTER TABLE ] : column
-  
-| Command    | Description |
-| ----------- | ----------- |
-|**ALTER TABLE** | Used to **add, delete, or modify columns** and  **add and drop various constraint**.|
-|**ALTER TABLE** table_name <br>**ADD** column_name datatype;| Add new column in Table.|
-|**ALTER TABLE** table_name<br>**DROP COLUMN** column_name;| Delete exsisting column.  |
-|**ALTER TABLE** table_name<br>**DROP COLUMNS** column_name1 , column_name2 , ... ;| Delete exsisting columns.  |
-|**ALTER TABLE** table_name<br>**MODIFY COLUMN** column_name new_datatype;|Change the data type of a column in a table.<br>**NOTE :** Be careful About previous datatype and values.|
-|**ALTER TABLE** table_name<br>**CHANGE** old_column_name new_column_name new_datatype;|Change old column name and datatype. <br> **NOTE :** Again be careful about previous datatype and values .It may truncate previous data in case of smaller size of datatype. |
 
-<br> 
-<br>
 
 
 ### Section 11 : [ AS ] : column
