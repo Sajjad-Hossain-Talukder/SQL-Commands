@@ -5,10 +5,10 @@
 
 | Command    | Description |
 | ----------- | ----------- |
-| SHOW DATABASES ;    | List all databases on the sql server.      |
-| CREATE DATABASE db_name ;  |  To create a new database.|
-|DROP DATABASE db_name ; | To delete the whole database | 
-|BACKUP DATABASE; |Ask Sir !!!!! | 
+|**SHOW DATABASES**  ;   | List all databases on the sql server.      |
+|**CREATE DATABASE** db_name ;  |  To create a new database.|
+|**DROP DATABASE** db_name ; | To delete the whole database | 
+|**BACKUP DATABASE**; |Ask Sir !!!!! | 
 
 <br>
 
@@ -16,9 +16,10 @@
 
 | Command    | Description |
 | ----------- | ----------- |
-|CREATE TABLE table_name ( <br>  column_name_1 data_type (size) NULL/ NOT NULL , <br> column_name_2 data_type (size) NULL/ NOT NULL ,<br> column_name_3 data_type (size) NULL/ NOT NULL , <br>........................................<br>........................................<br> PRIMARY KEY(column_name/s) ,<br> CONSTRAINT fk_name FOREIGN KEY (Column_Name/s) REFERENCES referenced_table_name(referenced_column_Name/s) ON DELETE CASCADE ON UPDATE CASCADE , <br> .......................... ); |  To Create a Table with Primary key and Foreign Keys .<br> <br><b>NOTE : Each Table can have only one Primary Key which may consists of one or more than one Columns . But a table/relation may have multiple Foreign Key .In Case of , Foreign Key Declaration , referenced Column have to be Primary Key in Referenced Table/Relation.|
-|RENAME TABLE old_table_name TO new_table_name; | To rename the existing Table. |
-|DROP TABLE table_name; | To drop the table. | 
+|**CREATE TABLE** table_name ( <br>  column_name_1 data_type (size) NULL/ NOT NULL , <br> column_name_2 data_type (size) NULL/ NOT NULL ,<br> column_name_3 data_type (size) NULL/ NOT NULL , <br>........................................<br>........................................<br> PRIMARY KEY(column_name/s) ,<br> CONSTRAINT fk_name FOREIGN KEY (Column_Name/s) REFERENCES referenced_table_name(referenced_column_Name/s) ON DELETE CASCADE ON UPDATE CASCADE , <br> .......................... ); |  To Create a Table with Primary key and Foreign Keys .<br> <br><b>NOTE : Each Table can have only one Primary Key which may consists of one or more than one Columns . But a table/relation may have multiple Foreign Key .In Case of , Foreign Key Declaration , referenced Column have to be Primary Key in Referenced Table/Relation.|
+|**RENAME TABLE** old_table_name TO new_table_name; | To rename the existing Table. |
+|**DROP TABLE** table_name; | To drop the table. | 
+|**DELETE** FROM table_name <br>WHERE condition;|Used to delete existing Rows in a table when condition meets.|
 
 <br>
   
@@ -232,12 +233,11 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 
   
 
-### Section 09 : [ UPDATE - DELETE - TRUNCATE TABLE ] : Row 
+### Section 09 : [ UPDATE - TRUNCATE TABLE ] : Row 
   
 | Command    | Description |
 | ----------- | ----------- |
 |**UPDATE** table_name <br> SET column1 = value1, column2 = value2, ...<br>WHERE condition;|Used to modify the existing records in a table.|
-|**DELETE** FROM table_name <br>WHERE condition;|Used to delete existing Rows in a table when condition meets.|
 |**TRUNCATE TABLE** table_name;| Deletes the data inside a table, but not the table itself.|
 
 <br> 
