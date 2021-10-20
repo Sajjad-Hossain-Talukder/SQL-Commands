@@ -232,11 +232,11 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 | Command    | Description |
 | ----------- | ----------- |
 |**ALTER TABLE** | Used to **add, delete, or modify columns** and  **add and drop various constraint**.|
-|ALTER TABLE table_name <br>ADD column_name datatype;| Add new column in Table.|
-|ALTER TABLE table_name<br>DROP COLUMN column_name;| Delete exsisting column.  |
-|ALTER TABLE table_name<br>DROP COLUMNS column_name1 , column_name2 , ... ;| Delete exsisting columns.  |
-|ALTER TABLE table_name<br>MODIFY COLUMN column_name new_datatype;|Change the data type of a column in a table.<br>**NOTE :** Be careful About previous datatype and values.|
-|ALTER TABLE table_name<br>CHANGE old_column_name new_column_name new_datatype;|Change old column name and datatype. <br> **NOTE :** Again be careful about previous datatype and values .It may truncate previous data in case of smaller size of datatype. |
+|**ALTER TABLE** table_name <br>**ADD** column_name datatype;| Add new column in Table.|
+|**ALTER TABLE** table_name<br>**DROP** COLUMN column_name;| Delete exsisting column.  |
+|**ALTER TABLE** table_name<br>**DROP** COLUMNS column_name1 , column_name2 , ... ;| Delete exsisting columns.  |
+|**ALTER TABLE** table_name<br>**MODIFY** COLUMN column_name new_datatype;|Change the data type of a column in a table.<br>**NOTE :** Be careful About previous datatype and values.|
+|**ALTER TABLE** table_name<br>**CHANGE** old_column_name new_column_name new_datatype;|Change old column name and datatype. <br> **NOTE :** Again be careful about previous datatype and values .It may truncate previous data in case of smaller size of datatype. |
 
 <br> 
 <br>
