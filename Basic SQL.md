@@ -12,7 +12,7 @@
 
 <br>
 
-### Section 02 : [ SHOW | RENAME | DROP  | DELETE  ] : Table
+### Section 02 : [ CREATE | RENAME | DROP  | DELETE  ] : Table
 
 | Command    | Description |
 | ----------- | ----------- |
