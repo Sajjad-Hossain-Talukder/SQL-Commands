@@ -59,7 +59,15 @@
 |SELECT <b>DISTINCT</b> column1, column2, ... FROM table_name; | Used to return only distinct (different) values. <br> <b>NOTE : Inside a table, a column often contains many duplicate values; and sometimes you only want to list the different (distinct) values.</b>|
 |SELECT * FROM table_name <b>LIMIT</b> row_number <br><br> SELECT * FROM table_name <b>LIMIT</b> starting_row_number ending_row_number | Useful on large tables with thousands of records. Returning a large number of records can impact performance. Used to see specific number of Records |
   
- <br>
+ <br><br>
+
+ ### Section 06: [ WHERE ] : Table
+  
+| Command    | Description |
+| ----------- | ----------- |  
+|SELECT column1, column2, ... FROM table_name <b>WHERE</b> condition ; | Used to filter records. It is used to extract only those records that fulfill a specified condition. It is also used in <b> UPDATE , DELETE</b> , etc.! |
+  
+  <br><br>
   
 
 ### Section 05: [ ORDER BY ] : Table
@@ -71,13 +79,7 @@
 <br>
   
 
-### Section 06: [ WHERE ] : Table
-  
-| Command    | Description |
-| ----------- | ----------- |  
-|SELECT column1, column2, ... FROM table_name <b>WHERE</b> condition ; | Used to filter records. It is used to extract only those records that fulfill a specified condition. It is also used in <b> UPDATE , DELETE</b> , etc.! |
-  
-  <br>
+
   
 
 ### Section 07: [ Operators ] : Table
