@@ -77,21 +77,9 @@
 | SELECT <b> CustomerName AS Customer</b>,<b> ContactName AS 'Contact Person'</b> <br> FROM Customers;| Renaming Column with single word or Multiple Words|
 |SELECT o.OrderID, o.OrderDate, c.CustomerName<br>FROM <b>Customers AS c, Orders AS o</b><br>WHERE ....... ;|Renaming Table|
 |SELECT S_Id as 'Student ID' , S_Name as 'Student Name' , <br> <b> CONCAT_WS(' ',S_Address,S_Email,S_Mobile) as 'Contact Details' </b> <br> from student  ;| Combining Column   |
+
 <br> 
 <br>
-  
-
-### Section 05: [ ORDER BY ] : Table
-  
-| Command    | Description |
-| ----------- | ----------- |
-|SELECT column1, column2, ...FROM table_name <b> ORDER BY</b> column1, column2,... ASC/DESC; | Used to sort the result-set in ascending or descending order. It sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword. <br> <b> NOTE : ORDER BY Several Columns : In case of Ordering By several Columns , It sorts based on First column, if it founds duplicate of then it follows second column and so on ... </b>|
-
-<br>
-  
-
-
-  
 
 ### Section 07: [ Operators ] : Table
   
@@ -130,17 +118,19 @@
   | SELECT column1, column2, ...<br>FROM table_name<br> WHERE columnN <b>LIKE</b> pattern;|" a% " =	Strings start with a <br> " %a " = Strings end with a<br>" %or% "=	Strings that have or in any position<br> " _ r % "	= strings that have "r" in the 2nd position from Beginning <br> "a _ %"	= Strings start with a and It at least have 1 char after a . <br> "a _ _ %" = Strings start with a and It at least have 2 char after a . <br>"a%o" =	Strings that start with "a" and ends with "o" <br> [ _ _ _ ] matches any string of exactly three characters.<br>[ _ _ _ %] matches any string of at least three characters.<br><br> If a pattern has <b> "n" number of Underscore</b> at the beginning, It will not count n number of character from beginging in the String.<br><br>If a pattern has <b> "n" number of Underscore</b> at the end, string must have at least n number of charcter after the pattern in String | 
   |Logical Operator Used in SubQuery : All-ANY-EXISTS-SOME| We will Study them In the later part of the File|
   
- 
-  
- 
-  
-  
   <br>
   <br>
+  
 
+### Section 05: [ ORDER BY ] : Table
   
+| Command    | Description |
+| ----------- | ----------- |
+|SELECT column1, column2, ...FROM table_name <b> ORDER BY</b> column1, column2,... ASC/DESC; | Used to sort the result-set in ascending or descending order. It sorts the records in ascending order by default. To sort the records in descending order, use the DESC keyword. <br> <b> NOTE : ORDER BY Several Columns : In case of Ordering By several Columns , It sorts based on First column, if it founds duplicate of then it follows second column and so on ... </b>|
+
 <br>
 <br>
+
 
 ### Section 08 : [ JOIN - CARTESIAN PRODUCT ] : Row 
 
