@@ -1,7 +1,9 @@
 ## MySQL Basics
 
-### Section 01 : [ SHOW | CREATE | DROP ] : Database
+<details>
+  <summary> Section 01 : [ SHOW | CREATE | DROP ] : Database </summary>
 
+<br><br>
 
 | Command    | Description |
 | ----------- | ----------- |
@@ -9,10 +11,16 @@
 |**CREATE DATABASE** db_name ;  |  To create a new database.|
 |**DROP DATABASE** db_name ; | To delete the whole database | 
 |**BACKUP DATABASE**; |Ask Sir !!!!! | 
-
+  
 <br>
+  
+</details>
+<details>
+  <summary> Section 02 : [ CREATE | RENAME | DROP  ] : Table </summary>
 
-### Section 02 : [ CREATE | RENAME | DROP  ] : Table
+
+<br><br>
+
 
 | Command    | Description |
 | ----------- | ----------- |
@@ -21,10 +29,13 @@
 |**DROP TABLE** table_name; | To drop the table. | 
 |**DELETE** FROM table_name <br>WHERE condition;|Used to delete existing Rows in a table when condition meets.|
 
-<br>
+<br><br>
   
-
-### Section 03 : [ INSERT INTO ] : Table
+</details>
+<details>
+  <summary> Section 03 : [ INSERT INTO ] : Table </summary>
+  
+<br><br>
   
 | Command    | Description |
 | ----------- | ----------- |  
@@ -33,8 +44,11 @@
   <br>
 
   <br> 
-
-  ### Section 10 : [ ALTER TABLE ] : column
+</details>
+<details>
+ <summary> Section 04 : [ ALTER TABLE ] : column </summary>
+<br> 
+<br>
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -47,9 +61,12 @@
 
 <br> 
 <br>
+</details>
   
-
-### Section 04 : [ SELECT ] : Table
+<details>
+  <summary> Section 05 : [ SELECT ] : Tablee </summary>
+ 
+  <br><br>
 
 
 | Command    | Description |
@@ -60,16 +77,24 @@
 |SELECT * FROM table_name <b>LIMIT</b> row_number <br><br> SELECT * FROM table_name <b>LIMIT</b> starting_row_number ending_row_number | Useful on large tables with thousands of records. Returning a large number of records can impact performance. Used to see specific number of Records |
   
  <br><br>
-
- ### Section 06: [ WHERE ] : Table
   
+  </details>
+<details>
+  <summary> Section 06: [ WHERE ] : Table </summary>
+
+  <br><br>
+ 
 | Command    | Description |
 | ----------- | ----------- |  
 |SELECT column1, column2, ... FROM table_name <b>WHERE</b> condition ; | Used to filter records. It is used to extract only those records that fulfill a specified condition. It is also used in <b> UPDATE , DELETE</b> , etc.! |
   
   <br><br>
+  
+</details>
+<details>
+  <summary> Section 07 : [ AS ] : column </summary>
 
-  ### Section 11 : [ AS ] : column
+<br><br>
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -80,8 +105,11 @@
 
 <br> 
 <br>
+</details>
+<details>
+  <summary> Section 08 : [ Operators ] : Table </summary>
 
-### Section 07: [ Operators ] : Table
+<br><br>
   
   #### [ Arithmatic Operator ]
   
@@ -121,8 +149,12 @@
   <br>
   <br>
   
+</details>
+<details>
+  <summary> Section 09 : [ ORDER BY ] : Table </summary>
+  
 
-### Section 05: [ ORDER BY ] : Table
+<br><br>
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -130,9 +162,12 @@
 
 <br>
 <br>
+</details>
+<details>
+  <summary> Section 10 : [ JOIN - CARTESIAN PRODUCT ] : Row  </summary>
 
 
-### Section 08 : [ JOIN - CARTESIAN PRODUCT ] : Row 
+<br><br>
 
 
 In different cases , we need to join two or more tables.To join two or more tables , we apply Cartesian Product formula here.But Cartesian Product returns all possible result .So also need to apply condition basis of Primary Key/Others Key of those table.
@@ -233,10 +268,13 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 <br><br>
 
 
+</details>
+<details>
+  <summary> Section 11 : [ UPDATE - TRUNCATE TABLE ] : Row  </summary>
 
   
 
-### Section 09 : [ UPDATE - TRUNCATE TABLE ] : Row 
+<br><br>
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -247,11 +285,17 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 <br>
 
 
+</details>
+  
+<details>
+  <summary> Section 12: [ Aggregate Functions - Group Functions ] : Table-Column  </summary>
 
 
 
 
-### Section 12: [ Aggregate Functions - Group Functions ] : Table-Column
+<br><br>
+  
+  
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -264,8 +308,12 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 
 <br> 
 <br>
+  
+</details>
+<details>
+  <summary> Section 13: [ GROUP BY ] : Table-Column </summary>
 
-### Section 13: [ GROUP BY ] : Table-Column
+<br><br>
 
 | Command    | Description |
 | ----------- | ----------- |
@@ -275,8 +323,12 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 
 <br> 
 <br>
+</details>
+<details>
+  <summary> Section 14 : [ Functions ] : Table-Column-Row </summary>
 
-### Section 14 : [ Functions ] : Table-Column-Row
+  
+<br><br>
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -294,9 +346,11 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 <br> 
 <br>
 
+</details>
+<details>
+  <summary> Section 15 : [ Constraints ] : Table-Column </summary>
 
-
-### Section 15 : [ Constraints ] : Table-Column
+<br><br>
   
 | Command    | Description |
 | ----------- | ----------- |
@@ -308,4 +362,9 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 |<b>DEFAULT</b> <br>1] <br> CREATE TABLE Persons (<br>    City varchar(255) <b>DEFAULT 'Sandnes'</b><br>);<br><br>  2] <br>ALTER TABLE Persons <br>ALTER City<b> SET DEFAULT 'Sandnes'</b>;<br> <br> 3]<br> ALTER TABLE Persons <br> ALTER City <b> DROP DEFAULT;</b> <br>|Sets a default value for a column if no value is specified <br> 1] SQL DEFAULT on CREATE TABLE <br>2] SQL DEFAULT on ALTER TABLE  <br> 3] DROP a DEFAULT Constraint <br> |
 |CREATE INDEX | Used to create and retrieve data from the database very quickly|
 
+</details>
+<details>
+  <summary> Section 16 : [ VIEW ] : Table </summary>
+</details> 
+  
 
