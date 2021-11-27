@@ -318,7 +318,7 @@ SELECT column_name(s) FROM table1 RIGHT JOIN table2  ON table1.column_name = tab
 | Command    | Description |
 | ----------- | ----------- |
 |**GROUP BY**|<br>Make group of rows that have the same values into summary rows, like **"find the number of customers in each country"**.It is often used with aggregate functions **(COUNT(), MAX(), MIN(), SUM(), AVG())** to group the result-set by one or more columns.<br>|
-|**SELECT** column_name(s) , aggrergate function  <br>**FROM** table_name <br> **WHERE** condition <br> **GROUP BY** column_name(s) <br> **ORDER BY** column_name(s); |EXAMPLE : TABLE- demo<br>SELECT country , sum(age) AS AGE_SUM <br> from  customer_informationlistforsale <br>GROUP BY (country) <br>ORDER BY AGE_SUM ;|
+|**SELECT** column_name(s) , aggrergate function  <br>**FROM** table_name <br> **WHERE** condition <br> **GROUP BY** column_name(s) <br> **Having** condition(s) <br> **ORDER BY** column_name(s); |EXAMPLE : TABLE- demo<br>SELECT country , sum(age) AS AGE_SUM <br> from  customer_informationlistforsale <br>GROUP BY (country) <br>ORDER BY AGE_SUM ;|
 
 
 <br> 
